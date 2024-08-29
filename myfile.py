@@ -1,10 +1,8 @@
-def multiply(x, y):
-    return x * y
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
 
-result = multiply(5, 10)
-print("The result is: " + str(result))  
-
-def print_message():
-    print("This is a message.")
-
-print_message()
+number = 5
+result = factorial(number)
